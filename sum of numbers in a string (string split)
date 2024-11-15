@@ -1,0 +1,12 @@
+string =  input("Enter: ")
+array = []
+x = string.split(" ")
+
+for i in range(len(x)):
+    array.append(int(x[i]))
+print(array)
+total = 0
+for i in array:
+    total = total + i
+
+print(total)
