@@ -1,0 +1,19 @@
+string =  input("Enter: ")
+array = []
+x = string.split(" ")
+
+n = 0
+for i in range(int(len(x)/4)):
+    array=[]
+    for j in range(n,n+4,1):
+        array.append(int(x[j]))
+    if array[2]*array[3] <= array[0]*array[1]:
+        if array[0] == array[2] or array[0] == array[3]:
+            print("YES")
+        elif array[1] == array[2] or array[1] == array[3]:
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
+    n = n + 4
