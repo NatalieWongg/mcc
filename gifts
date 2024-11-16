@@ -2,6 +2,7 @@ output = []
 n = 1000
 for i in range(n):
     output.append(0)
+#result = [0] * n achieves the same thing
 
 m=854
 gifts = 854
