@@ -1,0 +1,22 @@
+def magicalpower(T,n,power):
+    power.sort()
+    power.reverse()
+    while len(power)>1:
+        new_orb = power[0]*2 + power[1]
+        power[0]=new_orb
+        power.remove(power[1])
+    return(power[0])
+
+import sys
+input = ""
+data = input.split(" ")
+
+T = int(data[0])
+
+for i in range(T):
+    n = int(data[1])
+    power = list(map(int, data[2:2+n]))
+    if i < (T-1):
+        for j in range(1,2+n):
+            data.remove(data[1])
+    print (magicalpower(T,n,power))
