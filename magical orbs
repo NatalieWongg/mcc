@@ -1,4 +1,4 @@
-def magicalpower(T,n,power):
+def magicalpower(n,power):
     power.sort()
     power.reverse()
     while len(power)>1:
