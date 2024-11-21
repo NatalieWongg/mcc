@@ -10,8 +10,8 @@ result = [0] * N
 
 while destroyed ==False:
     i = 0
-    for arrow in range(K): #number of arrows shot
-        for j in range(len(a)): #calculates hp of each target
+    for arrow in range(K):
+        for j in range(len(a)): 
             damage = (M*X) - (j - i)*(j-i)
             if damage >0:
                 a[j]= a[j] - damage
